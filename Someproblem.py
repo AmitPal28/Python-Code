@@ -17,7 +17,6 @@ num2= num1-num2
 num1= num1-num2
 '''
 -------------------------------------------------------------------------------
-
 #== Problem-3 == Average of three number user take numbers in a single line 
 n1, n2, n3 = input("Enter a  three number separated by commas: ").split(",")
 avg= (int(n1) +int(n2) +int(n3))/3
