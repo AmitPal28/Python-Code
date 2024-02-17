@@ -115,5 +115,14 @@ def second_lowest(input_list):
 user_list = list(map(int, input("Enter a list of numbers separated by spaces: ").split()))
 result = second_lowest(user_list)
 print("Second-lowest element:", result)
+-------------------------------------------------------------------------------------------------------------------
+# ==Problem-10== Check if all elements in a list are unique.If a duplicate is found,exit the loop and print the duplicate.
+user_list = list(map(str,input("Enter a list of numbers separated by spaces:").split()))
+unique_list = set()
 
+for list in user_list:
+    if list in unique_list:
+        print("Duplicate Element of a list: ", list)
+        break
+    unique_list.add(list)
 '''
