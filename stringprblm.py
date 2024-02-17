@@ -1,8 +1,18 @@
 # Problem1: Display Nonrepeated char in a word
-word = input("Enter a string:").lower()
+wordFirst = input("Enter a string:").lower()
 
-for char in word:
+for char in wordFirst:
     # print(char)
-    if word.count(char) == 1:
+    if wordFirst.count(char) == 1:
         print("Non-repeated char is:",char)
-        
+    
+    
+# Problem2: Display First Nonrepeated char in a word
+
+wordSecond = input("Enter a string:").lower()
+
+for char in wordSecond:
+    # print(char)
+    if wordSecond.count(char) == 1:
+        print("Non-repeated char is:",char)
+        break
