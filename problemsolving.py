@@ -12,9 +12,9 @@ print("After Swapping first number is:",num1)
 print("After Swapping second number is:",num2)
 
 '''
-num1= num1+ num2
-num2= num1-num2
-num1= num1-num2
+# num1= num1+ num2
+# num2= num1-num2
+# num1= num1-num2
 '''
 -------------------------------------------------------------------------------
 #== Problem-3 == Average of three number user take numbers in a single line 
@@ -142,3 +142,62 @@ while(i< len(full_name)):
 
 
 '''
+
+# Age group Categorization:
+userAge= int(input("Enter user Age:"))
+
+if userAge<13:
+    print("Child")
+elif userAge<20 :
+    print("Teenager")
+elif userAge<60 :
+    print("Adult")
+else:
+    print("Senior")
+    
+# Movie ticket Pricing :
+userAge= int(input("Enter user Age:"))
+purchaseDay = "Wed"
+
+price=  12 if userAge >= 18 else 8
+if purchaseDay == "Wed":
+    price -= 2
+print("Ticket Price for you $",price)
+
+# Grade Caluclator:
+userScore = int(input("Enter the userScore:"))
+if userScore >=100:
+    print("Please verify your grade again!")
+    # for terminating loop we can use break and exit()
+    exit()
+    
+if userScore >= 90:
+    print("Grade: A")
+elif userScore >= 80:
+    print("Grade: B")
+elif userScore >= 70:
+    print("Grade: C")
+elif userScore >= 60:
+    print("Grade: D")
+else:
+    print("Grade: E")
+    
+# Weather Acitivity Suggestion:
+weather = int(input("Enter the  weather you want"))
+
+if weather == "Sunny":
+    activity = "Go for walk"
+elif weather == "Rainy":
+    activity = "Read a book"
+elif weather == "Snowy":
+    activity = "Build a Snow man"
+    
+#Password Word Checker:
+wordLength = input("Enter a user password word length is: ")
+
+if len(wordLength) < 6:
+    password = "Week"
+elif len(wordLength) <= 10 :
+    password = "Medium"
+else:
+    password = "Strong"
